@@ -98,7 +98,7 @@ h2 {
 }
 
 .logo img {
-  height: 44px;
+  height: 56px;
   width: auto;
 }
 
@@ -121,13 +121,13 @@ h2 {
 
 /* --- Hero --- */
 .hero {
-  padding: 80px 0 60px;
+  padding: 50px 0 40px;
 }
 
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -136,13 +136,13 @@ h2 {
   color: #1A6B6E;
   opacity: 0.7;
   margin-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   letter-spacing: 0.5px;
 }
 
 .hero-lead {
   font-size: 1.1rem;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   max-width: 460px;
 }
 
@@ -153,12 +153,12 @@ h2 {
 
 /* --- Kennst du das? --- */
 .kennst-du-das {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .kennst-du-das h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .quote-rotation {
@@ -219,13 +219,13 @@ h2 {
 
 /* --- Über mich --- */
 .ueber-mich {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .ueber-mich-inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -244,7 +244,7 @@ h2 {
 
 /* --- Kontakt --- */
 .kontakt {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .kontakt-inner {
@@ -416,6 +416,10 @@ h2 {
   .kontakt-image {
     max-height: 300px;
     overflow: hidden;
+  }
+
+  .logo img {
+    height: 48px;
   }
 
   .kontakt-text {
