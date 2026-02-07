@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Logo 7: Blätter klein und kompakt neben dem Namen — inline, auf einer Linie -->
+
+  <!-- Großes Blatt (Elternteil, kleiner skaliert) -->
+  <path d="M 28 72 C 12 60, 10 36, 28 26 C 32 24, 34 27, 32 35 C 29 48, 28 60, 28 72 Z"
+        fill="#1A5C5E" opacity="0.75"/>
+
+  <!-- Kleines Blatt (Kind, kleiner skaliert) -->
+  <path d="M 37 72 C 52 62, 54 44, 40 37 C 37 36, 36 38, 37 44 C 38 53, 38 62, 37 72 Z"
+        fill="#1A5C5E" opacity="0.4"/>
+
+  <!-- Vorname betont -->
+  <text x="72" y="52" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="28" font-weight="600" fill="#1A5C5E">Eva</text>
+  <!-- Nachname leichter -->
+  <text x="124" y="52" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="28" font-weight="300" fill="#1A5C5E">Bernhardt</text>
+
+  <!-- Untertitel mit Abstand -->
+  <text x="72" y="72" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="10" font-weight="300" fill="#6B8E8F" letter-spacing="2.5">FAMILIENCOACH FÜR GELINGENDE BEZIEHUNG</text>
+</svg>

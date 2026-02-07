@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120">
+  <!-- Logo 9b: Blätter links, Name rechts, Untertitel ohne Trennlinie, etwas enger -->
+
+  <!-- Großes Blatt (Elternteil) -->
+  <path d="M 44 90 C 18 72, 14 38, 44 24 C 49 22, 52 26, 49 38 C 45 55, 44 72, 44 90 Z"
+        fill="#1A5C5E" opacity="0.75"/>
+
+  <!-- Kleines Blatt (Kind) -->
+  <path d="M 56 90 C 78 76, 82 50, 60 40 C 56 38, 54 42, 56 50 C 58 62, 57 76, 56 90 Z"
+        fill="#1A5C5E" opacity="0.4"/>
+
+  <!-- Name -->
+  <text x="105" y="50" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="32" font-weight="300" fill="#1A5C5E" letter-spacing="0.5">Eva Bernhardt</text>
+
+  <!-- Untertitel direkt darunter, ohne Linie -->
+  <text x="107" y="72" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="12.5" font-weight="300" fill="#1A5C5E" letter-spacing="0.3" opacity="0.5">Familiencoaching für gelingende Beziehungen</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 130" width="380" height="130">
+  <!-- Logo 8: Blätter links, Name zweizeilig (Eva groß, Bernhardt kleiner) — elegant gestaffelt -->
+
+  <!-- Großes Blatt (Elternteil) -->
+  <path d="M 42 105 C 14 86, 10 48, 42 32 C 47 30, 50 34, 47 46 C 43 64, 42 82, 42 105 Z"
+        fill="#1A5C5E" opacity="0.75"/>
+
+  <!-- Kleines Blatt (Kind) -->
+  <path d="M 55 105 C 80 88, 84 58, 60 46 C 56 44, 54 48, 56 56 C 58 70, 57 88, 55 105 Z"
+        fill="#1A5C5E" opacity="0.4"/>
+
+  <!-- Eva — groß und warm -->
+  <text x="108" y="58" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="42" font-weight="300" fill="#1A5C5E" letter-spacing="2">Eva</text>
+
+  <!-- Bernhardt — kleiner, gesperrt -->
+  <text x="108" y="82" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="18" font-weight="300" fill="#1A5C5E" letter-spacing="5.5">Bernhardt</text>
+
+  <!-- Untertitel -->
+  <text x="108" y="106" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="10" font-weight="300" fill="#6B8E8F" letter-spacing="2">FAMILIENCOACH</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Logo 4: Zwei Blätter/organische Formen die sich berühren — reine Bildmarke -->
+  <!-- Konzept: Zwei Formen lehnen sich aneinander an, Wachstum + Verbindung -->
+
+  <!-- Linke Form (Blatt/Tropfen, kräftig) -->
+  <path d="M 48 85 C 25 70, 20 40, 48 28 C 52 26, 55 30, 52 40 C 48 55, 48 70, 48 85 Z"
+        fill="#1A5C5E" opacity="0.75"/>
+
+  <!-- Rechte Form (Blatt/Tropfen, heller, kleiner — Kind) -->
+  <path d="M 58 85 C 78 74, 82 52, 62 42 C 58 40, 56 43, 58 50 C 60 60, 59 72, 58 85 Z"
+        fill="#1A5C5E" opacity="0.4"/>
+
+  <!-- Verbindungspunkt unten (gemeinsame Basis) -->
+  <ellipse cx="53" cy="88" rx="8" ry="2" fill="#1A5C5E" opacity="0.15"/>
+</svg>

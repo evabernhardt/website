@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo — Sättigung — Eva Bernhardt</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f5f0eb;
+      color: #333;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 300;
+      font-size: 24px;
+      color: #1A5C5E;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+    p.ref {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-bottom: 50px;
+    }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .card.reference {
+      border: 2px dashed #ccc;
+      background: #faf8f5;
+    }
+    .card img { height: 80px; width: auto; flex-shrink: 0; }
+    .card-info { flex: 1; }
+    .card-info h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .card-info p {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.5;
+    }
+    .swatch {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 640px) {
+      .card { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Sättigung</h1>
+  <p class="subtitle">Gleicher Farbton, gleiche Helligkeit — steigende Sättigung (leuchtender)</p>
+  <p class="ref">Original #1A5C5E als Referenz oben</p>
+
+  <div class="stack">
+    <div class="card reference">
+      <img src="logo-farbe-3-kraeftig.svg" alt="Original">
+      <div class="card-info">
+        <h2 style="color: #1A5C5E;">Original — #1A5C5E</h2>
+        <p>Bisheriges Petrol als Referenz zum Vergleich.</p>
+      </div>
+      <div class="swatch" style="background: #1A5C5E;"></div>
+    </div>
+
+    <div class="card">
+      <img src="logo-sat-1.svg" alt="Stufe 1">
+      <div class="card-info">
+        <h2 style="color: #1A6B6E;">1 — Etwas leuchtender</h2>
+        <p>#1A6B6E · Dezent mehr Farbe, nah am Original. Subtiler Unterschied.</p>
+      </div>
+      <div class="swatch" style="background: #1A6B6E;"></div>
+    </div>
+
+    <div class="card">
+      <img src="logo-sat-2.svg" alt="Stufe 2">
+      <div class="card-info">
+        <h2 style="color: #147A7D;">2 — Deutlich leuchtender</h2>
+        <p>#147A7D · Spürbar lebendiger, aber noch ruhig. Guter Mittelweg.</p>
+      </div>
+      <div class="swatch" style="background: #147A7D;"></div>
+    </div>
+
+    <div class="card">
+      <img src="logo-sat-3.svg" alt="Stufe 3">
+      <div class="card-info">
+        <h2 style="color: #0D8C8F;">3 — Leuchtend</h2>
+        <p>#0D8C8F · Kräftig und frisch, strahlt deutlich mehr Energie aus.</p>
+      </div>
+      <div class="swatch" style="background: #0D8C8F;"></div>
+    </div>
+
+    <div class="card">
+      <img src="logo-sat-4.svg" alt="Stufe 4">
+      <div class="card-info">
+        <h2 style="color: #069DA0;">4 — Sehr leuchtend</h2>
+        <p>#069DA0 · Maximale Leuchtkraft, fast Türkis. Auffällig und modern.</p>
+      </div>
+      <div class="swatch" style="background: #069DA0;"></div>
+    </div>
+  </div>
+</body>
+</html>

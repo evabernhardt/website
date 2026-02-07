@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
+  <!-- Logo 6: Blätter oben zentriert, Name darunter — gestapelt -->
+
+  <!-- Großes Blatt (Elternteil) -->
+  <path d="M 148 100 C 120 82, 116 46, 148 30 C 153 28, 156 32, 153 44 C 149 62, 148 80, 148 100 Z"
+        fill="#1A5C5E" opacity="0.75"/>
+
+  <!-- Kleines Blatt (Kind) -->
+  <path d="M 162 100 C 186 84, 190 56, 166 44 C 162 42, 160 46, 162 54 C 164 68, 163 84, 162 100 Z"
+        fill="#1A5C5E" opacity="0.4"/>
+
+  <!-- Name zentriert -->
+  <text x="160" y="130" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="30" font-weight="300" fill="#1A5C5E" letter-spacing="1" text-anchor="middle">Eva Bernhardt</text>
+
+  <!-- Untertitel zentriert -->
+  <text x="160" y="152" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="10" font-weight="300" fill="#6B8E8F" letter-spacing="3" text-anchor="middle">FAMILIENCOACH</text>
+</svg>

@@ -1,0 +1,433 @@
+/* ==========================================================================
+   Eva Bernhardt — Familiencoaching
+   Design: Warm beige, white cards, petrol accent, system sans-serif
+   ========================================================================== */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #3a3a3a;
+  background: #f5f0eb;
+}
+
+/* --- Utilities --- */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #1A6B6E;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+h1, h2, h3 {
+  color: #1A6B6E;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #1A6B6E;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #15595B;
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* --- Header --- */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(245, 240, 235, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #1A6B6E;
+  opacity: 1;
+}
+
+/* --- Hero --- */
+.hero {
+  padding: 80px 0 60px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #1A6B6E;
+  opacity: 0.7;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.hero-lead {
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  max-width: 460px;
+}
+
+.hero-image img {
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Kennst du das? --- */
+.kennst-du-das {
+  padding: 80px 0;
+}
+
+.kennst-du-das h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.quote-rotation {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 48px 48px 40px;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+}
+
+.quote-category {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1A6B6E;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.quote-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  font-style: normal;
+}
+
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.quote-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1A6B6E;
+  opacity: 0.15;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.quote-dot:hover {
+  opacity: 0.4;
+}
+
+.quote-dot.active {
+  opacity: 0.6;
+}
+
+/* --- Über mich --- */
+.ueber-mich {
+  padding: 80px 0;
+}
+
+.ueber-mich-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.ueber-mich-image img {
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ueber-mich-text p {
+  margin-bottom: 16px;
+}
+
+.ueber-mich-text p:first-of-type {
+  font-size: 1.1rem;
+}
+
+/* --- Kontakt --- */
+.kontakt {
+  padding: 80px 0;
+}
+
+.kontakt-inner {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0;
+  overflow: hidden;
+}
+
+.kontakt-text {
+  padding: 48px;
+}
+
+.kontakt-text p {
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+.kontakt-details {
+  margin-bottom: 32px;
+}
+
+.kontakt-item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.kontakt-item:last-child {
+  border-bottom: none;
+}
+
+.kontakt-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1A6B6E;
+  opacity: 0.5;
+  min-width: 80px;
+}
+
+.kontakt-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Footer --- */
+.site-footer {
+  padding: 32px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-nav a {
+  color: #999;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  color: #1A6B6E;
+  opacity: 1;
+}
+
+/* --- Legal Pages (Impressum, Datenschutz) --- */
+.legal-page {
+  padding: 60px 0 80px;
+}
+
+.legal-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 48px;
+  max-width: 720px;
+}
+
+.legal-card h1 {
+  margin-bottom: 32px;
+}
+
+.legal-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.legal-card p {
+  margin-bottom: 12px;
+}
+
+.legal-card ul {
+  margin: 0 0 12px 20px;
+}
+
+.legal-card li {
+  margin-bottom: 4px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main-nav {
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-lead {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .ueber-mich-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ueber-mich-image {
+    max-width: 400px;
+  }
+
+  .kontakt-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .kontakt-image {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .kontakt-text {
+    padding: 32px;
+  }
+
+  .quote-rotation {
+    padding: 32px 28px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
