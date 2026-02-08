@@ -167,7 +167,7 @@
         show(current);
         rotation.style.opacity = "1";
       }, 300);
-    }, 7000);
+    }, 14000);
   }
 
   // --- Swipe / drag handling ---
