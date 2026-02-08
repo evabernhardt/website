@@ -3,7 +3,21 @@
     "allow": [
       "Bash(pip3 install:*)",
       "Bash(python3:*)",
-      "WebFetch(domain:unsplash.com)"
+      "WebFetch(domain:unsplash.com)",
+      "Bash(curl:*)",
+      "Bash(cwebp:*)",
+      "Bash(convert:*)",
+      "Bash(magick:*)",
+      "Bash(npx --version:*)",
+      "Bash(brew:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(sips --help:*)",
+      "Bash(sips:*)",
+      "Bash(done)",
+      "Bash(for:*)",
+      "Bash(ls:*)",
+      "Read(//Users/evabernhardt/dev/eva-bernhardt.de/assets/images/**)"
     ]
   }
 }

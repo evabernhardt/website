@@ -165,14 +165,30 @@ h2 {
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  padding: 48px 48px 40px;
   max-width: 720px;
   margin: 0 auto;
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: opacity 0.4s ease;
+  overflow: hidden;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+.quote-rotation:active {
+  cursor: grabbing;
+}
+
+.quote-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: #e8e2dc;
+}
+
+.quote-content {
+  padding: 32px 48px 28px;
 }
 
 .quote-category {
@@ -190,6 +206,23 @@ h2 {
   line-height: 1.8;
   color: #444;
   font-style: normal;
+}
+
+.quote-credit {
+  margin-top: 20px;
+  font-size: 11px;
+  color: #bbb;
+}
+
+.quote-credit a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.quote-credit a:hover {
+  color: #1A6B6E;
+  opacity: 1;
 }
 
 .quote-dots {
@@ -426,8 +459,8 @@ h2 {
     padding: 32px;
   }
 
-  .quote-rotation {
-    padding: 32px 28px;
+  .quote-content {
+    padding: 24px 28px 20px;
   }
 
   .footer-inner {
