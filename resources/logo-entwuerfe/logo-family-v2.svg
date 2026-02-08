@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120">
+  <!-- Variante 2: Fächer – vier Blätter in verschiedenen Winkeln auffächernd -->
+  <!-- Blatt 1: ganz links, stark geneigt -->
+  <path d="M 44 90 C 10 66, 6 30, 32 16 C 37 14, 40 18, 38 28 C 34 48, 42 70, 44 90 Z"
+        fill="#1A6B6E" opacity="0.7"/>
+  <!-- Blatt 2: links-mitte, leicht geneigt -->
+  <path d="M 46 90 C 24 70, 22 38, 46 22 C 50 20, 52 24, 50 34 C 48 54, 46 74, 46 90 Z"
+        fill="#1A6B6E" opacity="0.55"/>
+  <!-- Blatt 3: rechts-mitte, leicht nach rechts -->
+  <path d="M 54 90 C 72 74, 74 46, 56 32 C 53 30, 51 34, 53 42 C 55 58, 54 76, 54 90 Z"
+        fill="#1A6B6E" opacity="0.45"/>
+  <!-- Blatt 4: ganz rechts, stark nach rechts -->
+  <path d="M 56 90 C 84 72, 86 44, 64 30 C 60 28, 58 32, 60 40 C 63 56, 58 74, 56 90 Z"
+        fill="#1A6B6E" opacity="0.3"/>
+  <text x="105" y="52" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="32" font-weight="300" fill="#1A6B6E" letter-spacing="0.5">Eva Bernhardt</text>
+  <line x1="105" y1="62" x2="360" y2="62" stroke="#1A6B6E" stroke-width="0.5" opacity="0.25"/>
+  <text x="105" y="80" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="11" font-weight="300" fill="#6B9B9D" letter-spacing="1.8">Familiencoaching für gelingende Beziehungen</text>
+</svg>

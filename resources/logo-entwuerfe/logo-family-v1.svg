@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120">
+  <!-- Variante 1: Verschachtelte Familie – zwei große Elternblätter außen, zwei kleinere Kinderblätter innen -->
+  <!-- Elternblatt links (groß, nach links geneigt) -->
+  <path d="M 42 90 C 14 70, 10 36, 42 20 C 47 18, 50 22, 47 34 C 43 52, 42 72, 42 90 Z"
+        fill="#1A6B6E" opacity="0.75"/>
+  <!-- Elternblatt rechts (groß, nach rechts geneigt) -->
+  <path d="M 58 90 C 86 70, 90 36, 58 20 C 53 18, 50 22, 53 34 C 57 52, 58 72, 58 90 Z"
+        fill="#1A6B6E" opacity="0.65"/>
+  <!-- Kindblatt links (kleiner, leicht links) -->
+  <path d="M 46 90 C 28 76, 26 52, 46 40 C 49 38, 51 41, 49 48 C 47 62, 46 76, 46 90 Z"
+        fill="#1A6B6E" opacity="0.5"/>
+  <!-- Kindblatt rechts (kleiner, leicht rechts) -->
+  <path d="M 54 90 C 72 76, 74 52, 54 40 C 51 38, 49 41, 51 48 C 53 62, 54 76, 54 90 Z"
+        fill="#1A6B6E" opacity="0.35"/>
+  <text x="105" y="52" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="32" font-weight="300" fill="#1A6B6E" letter-spacing="0.5">Eva Bernhardt</text>
+  <line x1="105" y1="62" x2="360" y2="62" stroke="#1A6B6E" stroke-width="0.5" opacity="0.25"/>
+  <text x="105" y="80" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="11" font-weight="300" fill="#6B9B9D" letter-spacing="1.8">Familiencoaching für gelingende Beziehungen</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120">
+  <!-- Variante 4: Wachsende Familie – große Elternblätter mit kleinen Kinderblättern dazwischen -->
+  <!-- Elternblatt links (groß) -->
+  <path d="M 42 90 C 16 72, 12 38, 42 22 C 47 20, 50 24, 47 36 C 43 54, 42 72, 42 90 Z"
+        fill="#1A6B6E" opacity="0.75"/>
+  <!-- Elternblatt rechts (groß) -->
+  <path d="M 58 90 C 84 72, 88 38, 58 22 C 53 20, 50 24, 53 36 C 57 54, 58 72, 58 90 Z"
+        fill="#1A6B6E" opacity="0.6"/>
+  <!-- Kindblatt 1 (klein, leicht links) -->
+  <path d="M 47 90 C 34 80, 32 62, 47 50 C 50 48, 51 51, 50 56 C 49 66, 47 78, 47 90 Z"
+        fill="#1A6B6E" opacity="0.5"/>
+  <!-- Kindblatt 2 (klein, leicht rechts) -->
+  <path d="M 53 90 C 64 82, 66 66, 53 56 C 51 54, 50 57, 51 60 C 52 70, 53 80, 53 90 Z"
+        fill="#1A6B6E" opacity="0.35"/>
+  <text x="105" y="52" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="32" font-weight="300" fill="#1A6B6E" letter-spacing="0.5">Eva Bernhardt</text>
+  <line x1="105" y1="62" x2="360" y2="62" stroke="#1A6B6E" stroke-width="0.5" opacity="0.25"/>
+  <text x="105" y="80" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="11" font-weight="300" fill="#6B9B9D" letter-spacing="1.8">Familiencoaching für gelingende Beziehungen</text>
+</svg>
