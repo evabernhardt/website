@@ -250,6 +250,78 @@ h2 {
   opacity: 0.6;
 }
 
+/* --- Mein Angebot --- */
+.mein-angebot {
+  padding: 50px 0;
+}
+
+.mein-angebot h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.angebot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.angebot-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 32px;
+}
+
+.angebot-card h3 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.angebot-subtitle {
+  font-size: 0.9rem;
+  color: #1A6B6E;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.angebot-quote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.angebot-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.angebot-card li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.angebot-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1A6B6E;
+  opacity: 0.4;
+}
+
+.angebot-card li:last-child {
+  margin-bottom: 0;
+}
+
 /* --- Über mich --- */
 .ueber-mich {
   padding: 50px 0;
@@ -431,6 +503,10 @@ h2 {
 
   .hero-image {
     order: -1;
+  }
+
+  .angebot-grid {
+    grid-template-columns: 1fr;
   }
 
   .ueber-mich-inner {
