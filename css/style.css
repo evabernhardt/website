@@ -322,6 +322,153 @@ h2 {
   margin-bottom: 0;
 }
 
+/* --- Coaching-Ablauf --- */
+.coaching-ablauf {
+  padding: 50px 0;
+}
+
+.coaching-ablauf h2 {
+  text-align: center;
+}
+
+.coaching-intro {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 40px;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.ablauf-timeline {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ablauf-step {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  padding: 0 16px;
+}
+
+.ablauf-step::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: calc(50% - 20px);
+  height: 2px;
+  background: #1A6B6E;
+  opacity: 0.2;
+}
+
+.ablauf-step::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: calc(50% - 20px);
+  height: 2px;
+  background: #1A6B6E;
+  opacity: 0.2;
+}
+
+.ablauf-step:first-child::before,
+.ablauf-step:last-child::after {
+  display: none;
+}
+
+.ablauf-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1A6B6E;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.ablauf-step h3 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.ablauf-duration {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1A6B6E;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.ablauf-step p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.coaching-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.coaching-detail-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 32px;
+}
+
+.coaching-detail-card h3 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.coaching-detail-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coaching-detail-card li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.coaching-detail-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1A6B6E;
+  opacity: 0.4;
+}
+
+.coaching-detail-card li:last-child {
+  margin-bottom: 0;
+}
+
 /* --- Über mich --- */
 .ueber-mich {
   padding: 50px 0;
@@ -506,6 +653,30 @@ h2 {
   }
 
   .angebot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ablauf-timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .ablauf-step {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .ablauf-step::before,
+  .ablauf-step::after {
+    display: none;
+  }
+
+  .ablauf-step + .ablauf-step {
+    margin-top: 8px;
+  }
+
+  .coaching-details {
     grid-template-columns: 1fr;
   }
 
