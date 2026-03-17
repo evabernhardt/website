@@ -1,0 +1,333 @@
+/* ==========================================================================
+   Flyer-Styling — DIN lang (99mm × 210mm), einseitig
+   Design: Konsistent mit eva-bernhardt.de, visuell ansprechend
+   ========================================================================== */
+
+@page {
+  size: 99mm 210mm;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  font-size: 9pt;
+  line-height: 1.5;
+  color: #3a3a3a;
+  width: 99mm;
+  height: 210mm;
+  overflow: hidden;
+}
+
+/* --- Layout --- */
+.flyer {
+  width: 99mm;
+  height: 210mm;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Hero-Bereich (oberes Drittel) --- */
+.flyer-hero {
+  position: relative;
+  background: #1A6B6E;
+  padding: 8mm 8mm 12mm;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.flyer-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.flyer-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8mm;
+  position: relative;
+  z-index: 1;
+}
+
+.flyer-logo svg {
+  height: 22px;
+  width: auto;
+}
+
+.flyer-logo-name {
+  font-size: 9pt;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.3px;
+  opacity: 0.8;
+}
+
+.flyer-headline {
+  color: white;
+  font-weight: 300;
+  font-size: 18pt;
+  line-height: 1.15;
+  margin-bottom: 2mm;
+  position: relative;
+  z-index: 1;
+}
+
+.flyer-subheadline {
+  font-size: 8pt;
+  color: white;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Welle zwischen Hero und Inhalt --- */
+.flyer-wave {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -1px;
+  flex-shrink: 0;
+}
+
+/* --- Inhaltsbereich --- */
+.flyer-body {
+  background: #f5f0eb;
+  padding: 5mm 8mm;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flyer-intro {
+  font-size: 8.5pt;
+  line-height: 1.55;
+  margin-bottom: 4mm;
+  color: #555;
+}
+
+/* --- Angebote-Karten --- */
+.flyer-angebote {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+  margin-bottom: 4mm;
+}
+
+.flyer-angebot-card {
+  background: white;
+  border-radius: 6px;
+  padding: 3mm 4mm;
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+}
+
+.flyer-angebot-icon {
+  width: 8mm;
+  height: 8mm;
+  border-radius: 50%;
+  background: #1A6B6E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.15;
+}
+
+.flyer-angebot-icon svg {
+  width: 4mm;
+  height: 4mm;
+}
+
+.flyer-angebot-text {
+  flex: 1;
+}
+
+.flyer-angebot-name {
+  font-weight: 400;
+  color: #1A6B6E;
+  font-size: 8.5pt;
+  line-height: 1.3;
+}
+
+.flyer-angebot-desc {
+  color: #888;
+  font-size: 7.5pt;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+/* --- Bulletpoints (Jugend-Flyer) --- */
+.flyer-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+  margin-bottom: 4mm;
+}
+
+.flyer-bullet-item {
+  background: white;
+  border-radius: 6px;
+  padding: 3mm 4mm;
+  font-size: 8pt;
+  line-height: 1.4;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5mm;
+}
+
+.flyer-bullet-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #1A6B6E;
+  opacity: 0.5;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* --- Tags --- */
+.flyer-tags {
+  display: flex;
+  gap: 2mm;
+  flex-wrap: wrap;
+  margin-bottom: 4mm;
+}
+
+.flyer-tag {
+  background: #1A6B6E;
+  border-radius: 20px;
+  padding: 1mm 3mm;
+  font-size: 7pt;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* --- Dekorative Blätter im Inhalt --- */
+.flyer-deco-leaf {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- Kontakt-Footer --- */
+.flyer-footer {
+  margin-top: auto;
+  background: white;
+  border-radius: 8px 8px 0 0;
+  padding: 4mm;
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+}
+
+.flyer-kontakt {
+  flex: 1;
+}
+
+.flyer-kontakt-label {
+  font-size: 6pt;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1A6B6E;
+  opacity: 0.5;
+  margin-bottom: 1mm;
+}
+
+.flyer-kontakt-item {
+  font-size: 7.5pt;
+  line-height: 1.5;
+  color: #555;
+}
+
+.flyer-kontakt-item strong {
+  color: #1A6B6E;
+  font-weight: 400;
+}
+
+.flyer-qr {
+  width: 18mm;
+  height: 18mm;
+  flex-shrink: 0;
+}
+
+.flyer-qr img {
+  width: 100%;
+  height: 100%;
+}
+
+.flyer-qr-label {
+  font-size: 5.5pt;
+  text-align: center;
+  color: #bbb;
+  margin-top: 0.5mm;
+}
+
+/* ==========================================================================
+   Jugend-Variante
+   ========================================================================== */
+.flyer--jugend .flyer-hero {
+  background: linear-gradient(135deg, #1A6B6E 0%, #15595B 100%);
+}
+
+.flyer--jugend .flyer-body {
+  background: #1A6B6E;
+}
+
+.flyer--jugend .flyer-intro {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.flyer--jugend .flyer-bullet-item {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.flyer--jugend .flyer-bullet-dot {
+  background: white;
+  opacity: 0.5;
+}
+
+.flyer--jugend .flyer-tag {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.flyer--jugend .flyer-footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.flyer--jugend .flyer-kontakt-label {
+  color: white;
+  opacity: 0.4;
+}
+
+.flyer--jugend .flyer-kontakt-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.flyer--jugend .flyer-kontakt-item strong {
+  color: white;
+}
+
+.flyer--jugend .flyer-qr-label {
+  color: rgba(255, 255, 255, 0.4);
+}
