@@ -122,8 +122,8 @@ body {
 }
 
 .cover-logo svg {
-  height: 24px;
-  width: auto;
+  width: 52mm;
+  height: auto;
 }
 
 .cover-logo-name {
@@ -190,6 +190,15 @@ body {
   color: #1A6B6E;
   font-weight: 300;
   margin-bottom: 1mm;
+}
+
+.back-slogan {
+  font-size: 8pt;
+  color: #1A6B6E;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.75;
+  margin-bottom: 1.5mm;
 }
 
 .back-role {
@@ -543,6 +552,7 @@ body {
 }
 
 .panel--back-dark .back-name { color: white; }
+.panel--back-dark .back-slogan { color: white; opacity: 0.65; }
 .panel--back-dark .back-role { color: white; opacity: 0.5; }
 .panel--back-dark .back-contact-item { color: rgba(255,255,255,0.7); }
 .panel--back-dark .back-qr-label { color: rgba(255,255,255,0.4); }

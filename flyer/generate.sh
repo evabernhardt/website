@@ -20,23 +20,6 @@ img.save('qr-code.png')
 print('  -> qr-code.png')
 "
 
-# --- DIN-lang Flyer (einseitig) ---
-echo "=== Eltern-Flyer (DIN lang) ==="
-"$CHROME" \
-  --headless --disable-gpu \
-  --print-to-pdf="eltern-flyer.pdf" \
-  --print-to-pdf-no-header --no-pdf-header-footer \
-  "file://$(pwd)/eltern-flyer.html" 2>/dev/null
-echo "  -> eltern-flyer.pdf"
-
-echo "=== Jugend-Flyer (DIN lang) ==="
-"$CHROME" \
-  --headless --disable-gpu \
-  --print-to-pdf="jugend-flyer.pdf" \
-  --print-to-pdf-no-header --no-pdf-header-footer \
-  "file://$(pwd)/jugend-flyer.html" 2>/dev/null
-echo "  -> jugend-flyer.pdf"
-
 # --- Falt-Flyer (A4 quer, Wickelfalz, 2 Seiten) ---
 echo "=== Eltern-Faltflyer (A4 quer) ==="
 "$CHROME" \
