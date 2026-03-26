@@ -88,10 +88,10 @@ body {
   width: 100%; height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(26, 107, 110, 0.45) 0%,
-    rgba(26, 107, 110, 0.25) 40%,
-    rgba(26, 107, 110, 0.75) 70%,
-    rgba(26, 107, 110, 0.92) 100%
+    rgba(26, 107, 110, 0.05) 0%,
+    rgba(26, 107, 110, 0.05) 40%,
+    rgba(26, 107, 110, 0.35) 70%,
+    rgba(26, 107, 110, 0.62) 100%
   );
   z-index: 1;
 }
@@ -122,7 +122,7 @@ body {
 }
 
 .cover-logo svg {
-  width: 52mm;
+  width: 72mm;
   height: auto;
 }
 
@@ -174,6 +174,15 @@ body {
 
 .panel--back-dark .back-portrait {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+.back-scene {
+  width: calc(100% + 20mm);
+  height: 45mm;
+  object-fit: cover;
+  object-position: center 25%;
+  margin: -10mm -10mm 6mm -10mm;
+  align-self: stretch;
 }
 
 .back-logo {
@@ -306,10 +315,10 @@ body {
 .panel--cover-dark .cover-overlay {
   background: linear-gradient(
     to bottom,
-    rgba(21, 89, 91, 0.4) 0%,
-    rgba(21, 89, 91, 0.2) 40%,
-    rgba(21, 89, 91, 0.7) 70%,
-    rgba(21, 89, 91, 0.93) 100%
+    rgba(21, 89, 91, 0.05) 0%,
+    rgba(21, 89, 91, 0.05) 40%,
+    rgba(21, 89, 91, 0.35) 70%,
+    rgba(21, 89, 91, 0.62) 100%
   );
 }
 
@@ -551,9 +560,19 @@ body {
   background: #1A6B6E;
 }
 
+.back-invite {
+  font-size: 8pt;
+  color: #1A6B6E;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 3mm;
+  margin-bottom: 5mm;
+}
+
 .panel--back-dark .back-name { color: white; }
 .panel--back-dark .back-slogan { color: white; opacity: 0.65; }
 .panel--back-dark .back-role { color: white; opacity: 0.5; }
+.panel--back-dark .back-invite { color: white; opacity: 0.7; }
 .panel--back-dark .back-contact-item { color: rgba(255,255,255,0.7); }
 .panel--back-dark .back-qr-label { color: rgba(255,255,255,0.4); }
 .panel--back-dark .back-tag {
