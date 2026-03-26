@@ -24,18 +24,51 @@ print('  -> qr-code.png')
 echo "=== Eltern-Faltflyer (A4 quer) ==="
 "$CHROME" \
   --headless --disable-gpu \
-  --print-to-pdf="eltern-flyer-falt.pdf" \
+  --print-to-pdf="falt/eltern-flyer-falt.pdf" \
   --print-to-pdf-no-header --no-pdf-header-footer \
-  "file://$(pwd)/eltern-flyer-falt.html" 2>/dev/null
-echo "  -> eltern-flyer-falt.pdf"
+  "file://$(pwd)/falt/eltern-flyer-falt.html" 2>/dev/null
+echo "  -> falt/eltern-flyer-falt.pdf"
 
 echo "=== Jugend-Faltflyer (A4 quer) ==="
 "$CHROME" \
   --headless --disable-gpu \
-  --print-to-pdf="jugend-flyer-falt.pdf" \
+  --print-to-pdf="falt/jugend-flyer-falt.pdf" \
   --print-to-pdf-no-header --no-pdf-header-footer \
-  "file://$(pwd)/jugend-flyer-falt.html" 2>/dev/null
-echo "  -> jugend-flyer-falt.pdf"
+  "file://$(pwd)/falt/jugend-flyer-falt.html" 2>/dev/null
+echo "  -> falt/jugend-flyer-falt.pdf"
+
+# --- Aushang-Flyer (DIN A5 hochkant, einseitig) ---
+echo "=== Jugend-Aushang 1 (dunkel, direkt) ==="
+"$CHROME" \
+  --headless --disable-gpu \
+  --print-to-pdf="aushang/jugend-aushang-1.pdf" \
+  --print-to-pdf-no-header --no-pdf-header-footer \
+  "file://$(pwd)/aushang/jugend-aushang-1.html" 2>/dev/null
+echo "  -> aushang/jugend-aushang-1.pdf"
+
+echo "=== Jugend-Aushang 2 (hell, strukturiert) ==="
+"$CHROME" \
+  --headless --disable-gpu \
+  --print-to-pdf="aushang/jugend-aushang-2.pdf" \
+  --print-to-pdf-no-header --no-pdf-header-footer \
+  "file://$(pwd)/aushang/jugend-aushang-2.html" 2>/dev/null
+echo "  -> aushang/jugend-aushang-2.pdf"
+
+echo "=== Eltern-Aushang 1 (Foto, Coaching-Übersicht) ==="
+"$CHROME" \
+  --headless --disable-gpu \
+  --print-to-pdf="aushang/eltern-aushang-1.pdf" \
+  --print-to-pdf-no-header --no-pdf-header-footer \
+  "file://$(pwd)/aushang/eltern-aushang-1.html" 2>/dev/null
+echo "  -> aushang/eltern-aushang-1.pdf"
+
+echo "=== Eltern-Aushang 2 (emotionaler Einstieg) ==="
+"$CHROME" \
+  --headless --disable-gpu \
+  --print-to-pdf="aushang/eltern-aushang-2.pdf" \
+  --print-to-pdf-no-header --no-pdf-header-footer \
+  "file://$(pwd)/aushang/eltern-aushang-2.html" 2>/dev/null
+echo "  -> aushang/eltern-aushang-2.pdf"
 
 echo "=== Fertig! ==="
-echo "Die PDFs liegen in: $(pwd)"
+echo "PDFs liegen in: $(pwd)/falt/ und $(pwd)/aushang/"
