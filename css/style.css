@@ -119,6 +119,37 @@ h2 {
   opacity: 1;
 }
 
+/* --- Burger-Button (nur Mobile sichtbar) --- */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  background: #555;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.burger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.burger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.burger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
 /* --- Hero --- */
 .hero {
   padding: 50px 0 40px;
@@ -626,12 +657,36 @@ h2 {
   }
 
   .header-inner {
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .burger {
+    display: flex;
   }
 
   .main-nav {
-    gap: 20px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(245, 240, 235, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 16px;
   }
 
   .hero {

@@ -16,12 +16,15 @@
       <a href="#" class="logo">
         <img src="assets/images/logo.svg" alt="Eva Bernhardt — Familiencoaching für gelingende Beziehungen" height="50">
       </a>
-      <nav class="main-nav">
-        <a href="#kennst-du-das">Kennst du das?</a>
-        <a href="#ueber-mich">Über mich</a>
-        <a href="#mein-angebot">Mein Angebot</a>
-        <a href="#coaching-ablauf">Coaching</a>
-        <a href="#kontakt">Kontakt</a>
+      <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.getElementById('main-nav').classList.toggle('is-open');">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#kennst-du-das" onclick="document.getElementById('main-nav').classList.remove('is-open'); document.querySelector('.burger').setAttribute('aria-expanded','false');">Kennst du das?</a>
+        <a href="#ueber-mich" onclick="document.getElementById('main-nav').classList.remove('is-open'); document.querySelector('.burger').setAttribute('aria-expanded','false');">Über mich</a>
+        <a href="#mein-angebot" onclick="document.getElementById('main-nav').classList.remove('is-open'); document.querySelector('.burger').setAttribute('aria-expanded','false');">Mein Angebot</a>
+        <a href="#coaching-ablauf" onclick="document.getElementById('main-nav').classList.remove('is-open'); document.querySelector('.burger').setAttribute('aria-expanded','false');">Coaching</a>
+        <a href="#kontakt" onclick="document.getElementById('main-nav').classList.remove('is-open'); document.querySelector('.burger').setAttribute('aria-expanded','false');">Kontakt</a>
       </nav>
     </div>
   </header>

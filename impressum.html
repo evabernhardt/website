@@ -14,8 +14,11 @@
       <a href="index.html" class="logo">
         <img src="assets/images/logo.svg" alt="Eva Bernhardt" height="50">
       </a>
-      <nav class="main-nav">
-        <a href="index.html">Startseite</a>
+      <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.getElementById('main-nav').classList.toggle('is-open');">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" onclick="document.getElementById('main-nav').classList.remove('is-open'); document.querySelector('.burger').setAttribute('aria-expanded','false');">Startseite</a>
       </nav>
     </div>
   </header>
