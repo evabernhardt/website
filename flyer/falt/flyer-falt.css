@@ -315,10 +315,10 @@ body {
 .panel--cover-dark .cover-overlay {
   background: linear-gradient(
     to bottom,
-    rgba(21, 89, 91, 0.05) 0%,
-    rgba(21, 89, 91, 0.05) 40%,
-    rgba(21, 89, 91, 0.35) 70%,
-    rgba(21, 89, 91, 0.62) 100%
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 40%,
+    rgba(0, 0, 0, 0.35) 70%,
+    rgba(0, 0, 0, 0.62) 100%
   );
 }
 
