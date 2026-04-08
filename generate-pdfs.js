@@ -8,6 +8,7 @@ const files = [
   { html: 'flyer/aushang/eltern-aushang-2.html', pdf: 'flyer/aushang/eltern-aushang-2.pdf',  w: '148mm', h: '210mm' },
   { html: 'flyer/aushang/jugend-aushang-1.html', pdf: 'flyer/aushang/jugend-aushang-1.pdf',  w: '148mm', h: '210mm' },
   { html: 'flyer/aushang/jugend-aushang-2.html', pdf: 'flyer/aushang/jugend-aushang-2.pdf',  w: '148mm', h: '210mm' },
+  { html: 'flyer/aushang/jugend-aushang-3.html', pdf: 'flyer/aushang/jugend-aushang-3.pdf',  w: '148mm', h: '210mm' },
 ];
 
 (async () => {
