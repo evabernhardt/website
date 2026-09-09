@@ -529,6 +529,12 @@ h2 {
   font-size: 1.1rem;
 }
 
+.qualifikations-badge {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
 /* --- Kontakt --- */
 .kontakt {
   padding: 50px 0;
